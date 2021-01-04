@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Les fabuleuses pensées de Vincent
+title: Chez Vincent
 email: vincent@preau.org
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -31,8 +31,17 @@ github_username:  levincent
 
 # Build settings
 theme: minima
+#theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
