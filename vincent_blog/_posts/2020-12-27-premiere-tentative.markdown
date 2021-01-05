@@ -41,3 +41,14 @@ author: Vinnie
 <li> {{ tag }} </li>
 
 {% endfor %}
+
+
+<hr>
+
+<h3>Essai de data file </h3>
+
+{% for experience in site.data.experiences %}
+
+<li>{{ experience.company }}: {{ experience.occupation }}
+
+{% endfor %}
