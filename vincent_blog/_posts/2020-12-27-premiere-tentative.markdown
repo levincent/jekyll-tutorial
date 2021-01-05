@@ -52,3 +52,13 @@ author: Vinnie
 <li>{{ experience.company }}: {{ experience.occupation }}
 
 {% endfor %}
+
+<hr>
+
+<h3>Tuto 18: static files </h3>
+
+{% for file in site.static_files %}
+{% if file.image %}
+<img src="{{ file.path }}" alt="{{ file.name }}"> 
+{% endif %}
+{% endfor %}

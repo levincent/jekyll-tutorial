@@ -36,12 +36,15 @@ plugins:
   - jekyll-feed
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "default"
+  - scope: 
+      path: "assets/img"
+    values: 
+      image: "true"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
